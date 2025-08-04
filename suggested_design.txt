@@ -1,0 +1,50 @@
+Here’s a clean, minimal design concept for a startup offering data-science and machine-learning consultations. The goal is to convey professionalism, technological expertise, and easy access to key information.
+
+Color Palette and Typography
+• Primary colors:
+– Deep navy (#1a1f3b) for headers and footers
+– Teal accent (#2ab7ca) for buttons and links
+• Secondary colors: soft grays (#f5f6fa, #e1e2e6) for backgrounds and content areas
+• Font choices:
+– Heading: Montserrat (bold, modern sans-serif)
+– Body: Open Sans or Lato (clean, legible)
+Overall Layout
+• Full-width header with logo (top left) and horizontal navigation (top right)
+• Hero section beneath header, featuring a concise tagline, a brief value proposition, and a prominent “Get a Free Consultation” call-to-action (CTA) button
+• Three-column services overview, followed by a “How It Works” horizontal step bar
+• Footer with contact information, social links, and quick nav links
+Page Structure
+A. Home
+– Hero: background image or subtle animation of data visualizations
+– Services snapshot:
+1. Data Strategy & Roadmapping
+2. Predictive Modeling & AI Prototyping
+3. Data Engineering & Automation
+Each with an icon, a one-sentence description, and a “Learn More” link
+– How It Works (simple 3-step flow):
+1. Book a Call → 2. Custom Proposal → 3. Project Kickoff
+– “Why Choose Us” bullet points: multidisciplinary expertise, collaborative process, transparent pricing
+– Footer
+B. Services (detail page)
+– Overview intro paragraph
+– Individual service sections (expandable panels or separate anchor links)
+• Data Strategy & Assessment
+• Machine Learning Model Development
+• Data Pipeline & Infrastructure
+– Each section: challenges addressed, deliverables, timeline estimate, example client outcome
+C. About Us
+– Company mission statement
+– Culture snippet (remote-first? office location?)
+D. Contact / Book a Consultation
+– Simple form: name, email, company, project overview text area
+– Calendar embed or link to scheduling tool (e.g., Calendly)
+– Office address / general contact email
+Interaction & Responsiveness
+• Mobile-first breakpoints: stacked nav (hamburger menu), hero content centered, single-column services
+• Smooth scroll to sections from nav links
+• Hover states on buttons (subtle shadow or color lighten)
+• Lazy-loaded images and animations for performance
+Additional Touches
+• Logo animation on page load (e.g., data lines drawing in)
+• Floating “Book a Call” CTA button on lower right corner for quick access
+• GDPR-compliant cookie banner and privacy policy link in footer
