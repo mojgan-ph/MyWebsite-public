@@ -134,17 +134,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-heading font-semibold mb-6 text-navy">Schedule a Call</h2>
-              <p className="text-gray-600 mb-6">
-                Prefer to speak directly? Schedule a free 30-minute consultation to discuss your data science needs.
-              </p>
-              <button
-                  className="w-full bg-navy hover:bg-navy/90 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
-                Book a Call
-              </button>
-            </div>
-
             <div className="bg-gray-light rounded-lg p-6">
               <h3 className="text-lg font-heading font-semibold mb-4 text-navy">What to Expect</h3>
               <ul className="space-y-2 text-gray-600">

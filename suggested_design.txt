@@ -37,7 +37,6 @@ C. About Us
 – Culture snippet (remote-first? office location?)
 D. Contact / Book a Consultation
 – Simple form: name, email, company, project overview text area
-– Calendar embed or link to scheduling tool (e.g., Calendly)
 – Office address / general contact email
 Interaction & Responsiveness
 • Mobile-first breakpoints: stacked nav (hamburger menu), hero content centered, single-column services
