@@ -7,6 +7,8 @@ const Contact = () => {
     company: '',
     projectOverview: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -15,9 +17,31 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitMessage('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitMessage('Thank you! Your message has been sent successfully.')
+        setFormData({ name: '', email: '', company: '', projectOverview: '' })
+      } else {
+        setSubmitMessage('Sorry, there was an error sending your message. Please try again.')
+      }
+    } catch (error) {
+      setSubmitMessage('Sorry, there was an error sending your message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -91,11 +115,21 @@ const Contact = () => {
                 />
               </div>
 
+              {submitMessage && (
+                <div className={`p-4 rounded-lg ${submitMessage.includes('Thank you') 
+                  ? 'bg-green-100 text-green-700' 
+                  : 'bg-red-100 text-red-700'
+                }`}>
+                  {submitMessage}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-teal hover:bg-teal/90 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+                disabled={isSubmitting}
+                className="w-full bg-teal hover:bg-teal/90 disabled:bg-gray-400 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>

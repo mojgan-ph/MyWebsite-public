@@ -1,7 +1,7 @@
 .idea/
 images
-my_prompts_history.md
 node_modules/
 dist/
 .env
 .env.local
+about vercel env variables.txt
