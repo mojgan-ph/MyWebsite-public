@@ -1,4 +1,5 @@
-**I used Claude Code (version 1.0.67) to generate a simple website for me. Here is a history of my prompts:** 
+**I used Claude Code (version 1.0.67) to generate a simple website for me. Here is a history of my prompts:**
+
 1. what do you find in this project? (There was only suggested_design.txt)
 2. Ignore my_prompt_history.md and README.md files 
 3. Generate a project scaffold for a static React site based on the design spec in suggested_design.txt, while considering the following: 
@@ -13,12 +14,14 @@ Now install dependencies from package.json by: "npm install"
 For preview: "npm run dev" 
 
 **Claude Code prompts cont.**
+
 4. Link navigation opens pages at the bottom, not at the top. Can you fix it?
 
 For generating output (./dist) for deployment one can run "npm run build". But we don't need it as we deploy in Vercel, which does the build for us.
 
 **Claude Code prompts cont.**
+
 5. Generate a vercel.json for deploying this site on Vercel.
 6. Make the required changes to the project so that the form in Contact page is sent to my email. Use Vercel Serverless Functions + Nodemailer. 
 
-
+I noticed that pushes to my git repository does not trigger a redeployment. So created a Webhook in Vercel and added that to my git repo. 
